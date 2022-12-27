@@ -1,61 +1,131 @@
-h1{
-    text-shadow: 3px 5px 2px blue;
-    text-transform: uppercase;
-    color: brown;
-}
-.p{
-    color: aqua;
-    text-align:justify;
-    text-decoration:blink;
-    text-indent: 50px;
-    white-space: 50px;
-word-spacing: 10px;
-}
-.a{
-    text-decoration: none;
-    color: orangered;
-}
-.container{
-    max-width: 400px;
-    max-height: 400px;
+/*flex start*/
+.flex{
+    display: flex;
+    height: 500px;
+    width: 500px;
+flex-wrap: wrap;
     border: 1px solid black;
-    overflow: scroll;
-    font-weight: 100px;
-    text-indent: 20px;
-    text-align:initial;
-    line-break: auto;
-    color: rgb(56, 223, 145);
+    flex-direction: column;
+justify-content:space-around;
+align-content: space-around;
+align-items: center;
+
+    
+    
 }
-ul{
-    list-style:decimal;
-    list-style-image: url();
+.box1{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    order: 7;
+   
 }
-.w3{
-    text-decoration: none;
-    font-size: 20px;
+.box2{
+    background-color:green;
+    height: 100px;
+    width: 100px;
+   /* align-self: flex-end;*/
+}
+.box3{
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+.box4{
+    background-color:blue;
+    height: 100px;
+    width: 100px;
+}
+.box5{
+    background-color: rgb(15, 191, 235);
+    height: 100px;
+    width: 100px;
+}
+.box6{
+    background-color:rgb(161, 15, 154);
+    height: 100px;
+    width: 100px;
+    order: 5;
+}
+.box7{
+    background-color: rgb(174, 211, 10);
+    height: 100px;
+    width: 100px;
+    order: 1;
+}
+.box8{
+    background-color:rgb(13, 214, 120);
+    height: 100px;
+    width: 100px;
+}
+/*flex end*/
+
+/*grid start*/
+.grid{
+    display: grid;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    grid-template-columns:repeat(12,auto);
+    grid-template-rows:50px auto 30px;
+    text-align: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.header{
+    background-color: rgb(15, 191, 235);
+    grid-column: 1/-1;
+   
+    
+}
+.sidebar{
+    background-color:rgb(161, 15, 154);
+   grid-column: 1/6;
+   
+}
+.main{
+    background-color: rgb(174, 211, 10);
+grid-column: 6/-1;
+
+ 
+}
+.footer{
+    background-color:rgb(13, 214, 120);
+    grid-column:1/-1;
+}
+/*grid end*/
+
+/*animation start*/
+.animation{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 2px solid red;
+   
+    animation-name: square;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
 }
-.w3:link{
-    color:red;
-}
-.w3:visited{
-    color:rgb(19, 216, 29);
-}
-.w3:hover{
-    color:rgb(25, 13, 201);
-    font-size: 30px;
-    background-color: brown;
-    border: 2px solid black;
-    border-radius: 20%;
-}
-.w3:active{
-    color:rgb(208, 255, 0);
-}
-.background{
-    height: 200px;
-    width: 200px;
-    background-color: crimson;
-    background-image: url(./assets/banner.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+@keyframes square{
+    0%{
+        background-color: yellowgreen;
+       /* left:0px; top: 0px;*/
+    }
+    50%{
+        background-color: rgb(104, 14, 56);
+      /*  left:200px; top: 0px;*/
+       transform: rotate(360deg);
+    }
+    70%{
+        background-color: rgb(97, 72, 240);
+       /* left:200px; top: 300px;*/
+    }
+    100%{
+        background-color: rgb(226, 127, 14);
+       /* left:0px; top: 0px;*/
+  
+    }
 }
