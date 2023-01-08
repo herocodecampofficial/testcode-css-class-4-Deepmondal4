@@ -1,0 +1,109 @@
+header{
+    background-color: aqua;
+    padding-bottom: 0px;
+    background-image: url(./assets/66c367743e2e080e75840598e1742ecd.jpeg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+   margin-top: ; 
+}
+
+.logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+   
+}
+.p{
+    
+    margin-bottom: 60px;
+    margin-right: 40px;
+}
+span{
+   margin-left: -40px;
+   margin-top: -42px;
+   background-color: blueviolet;
+}
+nav{
+    margin-top: -40px;
+
+}
+ul{
+    display: flex;
+ justify-content: space-around;
+ align-items: center;
+ background-color: rgb(2, 2, 83);
+margin: 20px 0px;
+padding: 10px 0px;
+row-gap: 220px;
+color: white;
+list-style: none;
+}
+main{
+   height: 580px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: -20px;
+   
+}
+.side{
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+   
+  
+    }
+    .a{
+        height: 100%;
+        width: 300px;
+        background-image: url(./assets/2022-11-08.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .b{
+            height: 100%;
+            width: 300px;
+            background-image: url(./assets/329619_10151025283263191_896919757_o.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            .c{
+                height: 100%;
+                width: 300px;
+                background-image: url(./assets/616902_10151025268028191_1628839287_o.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                }
+                .d{
+                    height: 100%;
+                    width: 300px;
+                    background-image: url(./assets/329619_10151025283263191_896919757_o.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    }
+  
+    
+.image{
+height: 100%;
+background-image: url(./assets/2022-11-08.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin-left: -150px;
+}
+footer{
+    background-color: rgb(3, 3, 37);
+    text-align: center;
+    color: white;
+    margin-top: -16px;
+    margin-bottom: -40px;
+   
+}
+.p1{
+    padding: 10px 0px;
+}
+
